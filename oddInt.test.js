@@ -26,4 +26,10 @@ describe("oddInt", () => {
       "Multiple values appear an odd number of times"
     );
   });
+
+  it("returns a statement", () => {
+    expect(oddInt([0, 1, 1, 0])).toEqual(
+      "No values appear an odd number of times"
+    );
+  });
 });

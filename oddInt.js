@@ -23,7 +23,12 @@ const oddInt = function (numberArray) {
       }
     }
   });
-  return oddNumber;
+
+  if (typeof oddNumber === "undefined") {
+    return "No values appear an odd number of times";
+  } else {
+    return oddNumber;
+  }
 };
 
 module.exports = oddInt;
