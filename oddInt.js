@@ -1,5 +1,7 @@
 const oddInt = function (numberArray) {
-  console.log(`numberArray: ${numberArray}`);
+  if (!Array.isArray(numberArray)) {
+    throw new Error("Argument must be an array");
+  }
   if (numberArray.length === 0) {
     return "Array must have at least one value";
   }

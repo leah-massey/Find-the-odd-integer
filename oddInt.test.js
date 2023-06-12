@@ -16,4 +16,8 @@ describe("oddInt", () => {
   it("returns 'Array must have at least one value' if empty array", () => {
     expect(oddInt([])).toEqual("Array must have at least one value");
   });
+
+  it("throws an error", () => {
+    expect(() => oddInt("a")).toThrow("Argument must be an array");
+  });
 });
