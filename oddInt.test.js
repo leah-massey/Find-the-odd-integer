@@ -10,6 +10,10 @@ describe("oddInt", () => {
   });
 
   it("returns the value that occurs an odd number of times when multiple values are given", () => {
-    expect(oddInt([1, 1, 2])).toEqual(2);
+    expect(oddInt([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1])).toEqual(4);
+  });
+
+  it("returns 'Array must have at least one value' if empty array", () => {
+    expect(oddInt([])).toEqual("Array must have at least one value");
   });
 });
