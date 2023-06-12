@@ -20,4 +20,10 @@ describe("oddInt", () => {
   it("throws an error", () => {
     expect(() => oddInt("a")).toThrow("Argument must be an array");
   });
+
+  it("returns a statement", () => {
+    expect(oddInt([0, 1, 0, 1, 0, 1])).toEqual(
+      "Multiple values appear an odd number of times"
+    );
+  });
 });
