@@ -1,5 +1,5 @@
 const oddInt = function (array) {
-  return 7;
+  return Number(array.join(""));
 };
 
 module.exports = oddInt;
