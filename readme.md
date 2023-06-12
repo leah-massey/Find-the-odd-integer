@@ -15,3 +15,7 @@ Given an array of integers, find the one that appears an odd number of times.
 'a' throw error : format incorrect
 [0,1,0,1,0,1] should return 'Multiple values appear an odd number of times'.
 [0,1,1,0] should return 'No values appear an odd number of times'.
+
+## Motive 
+
+Working on and refining my TDD processes.
